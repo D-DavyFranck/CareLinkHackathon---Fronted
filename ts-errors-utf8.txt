@@ -1,0 +1,36 @@
+﻿app/(hms)/hms/patients/[id]/page.tsx(27,17): error TS2322: Type '{ children: Element; asChild: true; variant: "ghost"; className: string; }' is not assignable to type 'IntrinsicAttributes & ButtonProps & VariantProps<(props?: (ConfigVariants<{ variant: { default: string; outline: string; secondary: string; ghost: string; destructive: string; link: string; }; size: { ...; }; }> & ClassProp) | undefined) => string>'.
+  Property 'asChild' does not exist on type 'IntrinsicAttributes & ButtonProps & VariantProps<(props?: (ConfigVariants<{ variant: { default: string; outline: string; secondary: string; ghost: string; destructive: string; link: string; }; size: { ...; }; }> & ClassProp) | undefined) => string>'.
+app/(hms)/hms/patients/page.tsx(111,37): error TS2304: Cannot find name 'cn'.
+app/(hms)/hms/patients/page.tsx(119,27): error TS2322: Type '{ children: Element; asChild: true; variant: "ghost"; className: string; }' is not assignable to type 'IntrinsicAttributes & ButtonProps & VariantProps<(props?: (ConfigVariants<{ variant: { default: string; outline: string; secondary: string; ghost: string; destructive: string; link: string; }; size: { ...; }; }> & ClassProp) | undefined) => string>'.
+  Property 'asChild' does not exist on type 'IntrinsicAttributes & ButtonProps & VariantProps<(props?: (ConfigVariants<{ variant: { default: string; outline: string; secondary: string; ghost: string; destructive: string; link: string; }; size: { ...; }; }> & ClassProp) | undefined) => string>'.
+app/(hms)/hms/registration/page.tsx(221,26): error TS2304: Cannot find name 'cn'.
+components/analytics/CoverageActivity.tsx(32,19): error TS2322: Type '(value: number) => [string, string]' is not assignable to type 'Formatter<ValueType, NameType> & ((value: ValueType, name: NameType, item: TooltipPayloadEntry, index: number, payload: TooltipPayload) => ReactNode | [...])'.
+  Type '(value: number) => [string, string]' is not assignable to type 'Formatter<ValueType, NameType>'.
+    Types of parameters 'value' and 'value' are incompatible.
+      Type 'ValueType | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.
+components/analytics/DataQualityMetrics.tsx(55,19): error TS2322: Type '(value: number) => [string, string]' is not assignable to type 'Formatter<ValueType, NameType> & ((value: ValueType, name: NameType, item: TooltipPayloadEntry, index: number, payload: TooltipPayload) => ReactNode | [...])'.
+  Type '(value: number) => [string, string]' is not assignable to type 'Formatter<ValueType, NameType>'.
+    Types of parameters 'value' and 'value' are incompatible.
+      Type 'ValueType | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.
+components/analytics/MatchPerformance.tsx(23,112): error TS2339: Property 'duplicateRateEstimate' does not exist on type 'AnalyticsMetrics[]'.
+components/analytics/MatchPerformance.tsx(108,20): error TS2322: Type '(value: number) => [string, string]' is not assignable to type 'Formatter<ValueType, NameType> & ((value: ValueType, name: NameType, item: TooltipPayloadEntry, index: number, payload: TooltipPayload) => ReactNode | [...])'.
+  Type '(value: number) => [string, string]' is not assignable to type 'Formatter<ValueType, NameType>'.
+    Types of parameters 'value' and 'value' are incompatible.
+      Type 'ValueType | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.
+components/analytics/ReviewQueueAnalytics.tsx(29,92): error TS2339: Property 'avgReviewTimeMinutes' does not exist on type 'AnalyticsMetrics[]'.
+components/analytics/ReviewQueueAnalytics.tsx(42,40): error TS2339: Property 'reviewerPerformance' does not exist on type 'AnalyticsMetrics[]'.
+components/analytics/ReviewQueueAnalytics.tsx(42,65): error TS7006: Parameter 'rev' implicitly has an 'any' type.
+components/analytics/ReviewQueueAnalytics.tsx(42,70): error TS7006: Parameter 'index' implicitly has an 'any' type.
+components/analytics/ReviewQueueAnalytics.tsx(75,19): error TS2322: Type '(value: number) => [number, string]' is not assignable to type 'Formatter<ValueType, NameType> & ((value: ValueType, name: NameType, item: TooltipPayloadEntry, index: number, payload: TooltipPayload) => ReactNode | [...])'.
+  Type '(value: number) => [number, string]' is not assignable to type 'Formatter<ValueType, NameType>'.
+    Types of parameters 'value' and 'value' are incompatible.
+      Type 'ValueType | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.
+components/patient/EncounterDetail.tsx(26,26): error TS2339: Property 'shortCode' does not exist on type 'Facility'.
+components/patient/PatientHeader.tsx(58,93): error TS2339: Property 'color' does not exist on type 'Facility'.
+components/patient/PatientHeader.tsx(59,92): error TS2339: Property 'shortCode' does not exist on type 'Facility'.
+components/patient/VisitTimeline.tsx(61,32): error TS2339: Property 'shortCode' does not exist on type 'Facility'.
+lib/mock-data/analytics.ts(100,3): error TS2353: Object literal may only specify known properties, and 'duplicateRateEstimate' does not exist in type 'AnalyticsMetrics[]'.
