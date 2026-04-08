@@ -10,7 +10,7 @@ import {
   Info,
   CheckCircle2
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Facility, ConnectionType, AuthType, SyncMode } from '@/types/facility';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -25,12 +25,28 @@ interface FacilityConfigModalProps {
   onSave: (facility: Partial<Facility>) => void;
 }
 
-export function FacilityConfigModal({ facility, onClose, onSave }: FacilityConfigModalProps) {
+export default function FacilityConfigModal({ facility, onClose, onSave }: FacilityConfigModalProps) {
   const [activeTab, setActiveTab] = useState('basic');
   const [formData, setFormData] = useState<Partial<Facility>>(facility || {
+    id: '',
+    name: '',
+    code: '',
+    type: 'Public Hospital',
+    county: '',
+    subCounty: '',
+    address: '',
+    contact: {
+      name: '',
+      email: '',
+      phone: ''
+    },
     connectionType: 'FHIR R4',
+    syncSchedule: '0 0 * * *',
     syncMode: 'Incremental',
     status: 'Active',
+    lastSync: new Date().toISOString(),
+    patientsContributed: 0,
+    dataQualityScore: 0,
     fieldMapping: {
       facilityPatientId: '',
       firstName: '',

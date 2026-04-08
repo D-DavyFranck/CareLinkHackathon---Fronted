@@ -13,7 +13,7 @@ import {
   MobileIcon,
   ActivityLogIcon
 } from '@radix-ui/react-icons';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { MatchQueueItem, SourceRecord } from '@/types/matching';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';

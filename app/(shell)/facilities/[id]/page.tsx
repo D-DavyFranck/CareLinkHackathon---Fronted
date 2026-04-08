@@ -17,7 +17,7 @@ import { mockFacilities } from '@/lib/mock-data/facilities';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 
 export default function FacilityDashboardPage() {
   const { id } = useParams();

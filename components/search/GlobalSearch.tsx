@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { MagnifyingGlassIcon, PersonIcon, HeartIcon, HomeIcon, CheckCircledIcon } from '@radix-ui/react-icons';
 import { performSearch } from '@/lib/mock-data/search';
 import { SearchResult } from '@/types/search';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export function GlobalSearch() {
   const [query, setQuery] = useState('');

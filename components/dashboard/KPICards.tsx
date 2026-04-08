@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { 
   ArrowTopRightIcon, 
   ArrowBottomLeftIcon,
@@ -24,26 +24,26 @@ function KPICard({ title, value, trend, trendValue, trendType, subtext, delay = 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay }}
-      className="bg-card border border-border rounded-xl p-6 flex flex-col gap-4 hover:border-primary/50 hover:shadow-md transition-all group"
+      className="bg-card border border-border rounded-xl p-3 sm:p-4 md:p-6 flex flex-col gap-3 sm:gap-4 hover:border-primary/50 hover:shadow-md transition-all group min-h-[120px] sm:min-h-[140px]"
     >
       <div className="flex items-center justify-between">
-        <span className="text-xs font-medium text-muted-foreground tracking-tight">{title}</span>
+        <span className="text-[10px] sm:text-xs font-medium text-muted-foreground tracking-tight">{title}</span>
         <div className={cn(
-          "flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold",
+          "flex items-center gap-1 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-bold",
           trendType === 'up' ? "bg-accent/10 text-accent" : "bg-destructive/10 text-destructive"
         )}>
-          {trendType === 'up' ? <ArrowTopRightIcon className="w-3 h-3" /> : <ArrowBottomLeftIcon className="w-3 h-3" />}
+          {trendType === 'up' ? <ArrowTopRightIcon className="w-2.5 h-2.5 sm:w-3 sm:h-3" /> : <ArrowBottomLeftIcon className="w-2.5 h-2.5 sm:w-3 sm:h-3" />}
           {trendValue}
         </div>
       </div>
       
-      <div className="flex flex-col gap-1">
-        <h3 className="text-2xl font-bold text-foreground tracking-tight">{value}</h3>
-        <div className="flex items-center gap-2 mt-2">
-          <span className="text-xs font-semibold text-foreground">{trend}</span>
-          {trendType === 'up' ? <ArrowTopRightIcon className="w-3 h-3 text-foreground" /> : <ArrowBottomLeftIcon className="w-3 h-3 text-foreground" />}
+      <div className="flex flex-col gap-1 flex-1">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground tracking-tight">{value}</h3>
+        <div className="flex items-center gap-1.5 sm:gap-2 mt-1">
+          <span className="text-[9px] sm:text-xs font-semibold text-foreground">{trend}</span>
+          {trendType === 'up' ? <ArrowTopRightIcon className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-foreground" /> : <ArrowBottomLeftIcon className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-foreground" />}
         </div>
-        <p className="text-[10px] text-muted-foreground">{subtext}</p>
+        <p className="text-[8px] sm:text-[10px] text-muted-foreground mt-auto">{subtext}</p>
       </div>
     </motion.div>
   );
@@ -51,7 +51,7 @@ function KPICard({ title, value, trend, trendValue, trendType, subtext, delay = 
 
 export function KPICards() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <>
       <KPICard 
         title="Total Revenue" 
         value="$1,250.00" 
@@ -88,6 +88,6 @@ export function KPICards() {
         subtext="Meets growth projections"
         delay={0.4}
       />
-    </div>
+    </>
   );
 }

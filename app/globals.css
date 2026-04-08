@@ -84,6 +84,11 @@
   html {
     @apply font-sans;
   }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {

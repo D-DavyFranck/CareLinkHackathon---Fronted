@@ -7,7 +7,7 @@ import { PatientHeader } from '@/components/patient/PatientHeader';
 import { VisitTimeline } from '@/components/patient/VisitTimeline';
 import { EncounterDetail } from '@/components/patient/EncounterDetail';
 import { PatientIntelligencePanel } from '@/components/patient/PatientIntelligencePanel';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { ChevronLeft } from 'lucide-react';
 
 export default function PatientProfilePage() {
