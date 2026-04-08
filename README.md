@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CareLinkHackathon-Fronted
 An intelligent middleware layer integrating healthcare providers, insurers, and government identity systems into a single, fraud-resilient Revenue Cycle Management (RCM) platform — powered by LLM-driven anomaly detection and real-time IPRS verification.
 =======
@@ -754,4 +753,3 @@ Proprietary — © 2025 MediLink Systems. All rights reserved.
 ---
 
 *Built with care for Kenya's healthcare system — improving access, reducing waste, and protecting every shilling in the revenue cycle.*
->>>>>>> fd37f59ffb910f91757204990f3d049009da59d3
